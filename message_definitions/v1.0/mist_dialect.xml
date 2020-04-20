@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mavlink>
+
+    <include>common.xml</include>
+    <!-- <version>9</version> -->
+    <dialect>8</dialect>
+
+    <enums>
+        <!-- Enums are defined here (optional) -->
+    </enums>
+
+    <messages>
+        <!-- CUSTOM MESSAGE FOR SENSOR_WINGLET-->
+        <message id="302" name="SENSOR_WINGLET">
+            <description>Quaternion information for each of the four UAV winglets</description>
+            <field type="uint64_t" name="timestamp">Timestamp</field>
+            <field type="uint8_t" name="id">Winglet ID</field>
+            <field type="float" name="x">X Rotational Quaternion</field>
+            <field type="float" name="y">Y Rotational Quaternion</field>
+            <field type="float" name="z">Z Rotational Quaternion</field>
+            <field type="float" name="w">W Rotational Quaternion</field>
+        </message>
+    </messages>
+
+</mavlink>
